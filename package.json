@@ -1,0 +1,18 @@
+{
+  "name": "vellum-wa-daemon",
+  "version": "1.0.0",
+  "description": "Vellum 24/7 Autonomous WhatsApp Engine with Cloudflare AI & D1 Integration",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.12",
+    "express": "^4.19.2",
+    "qrcode": "^1.5.3",
+    "pino": "^9.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

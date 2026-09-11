@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: vellum-wa-engine
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: CLOUDFLARE_BASE_URL
+        value: https://vellum0antigravity.pages.dev
+      - key: AUTO_REPLY_ENABLED
+        value: "true"
