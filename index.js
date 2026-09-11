@@ -97,7 +97,7 @@ async function processBufferedMessage(senderJid, senderName) {
         const data = await aiRes.json();
         let reply = data.choices?.[0]?.message?.content || "";
         // Strip think tags if any from DeepSeek R1
-        reply = reply.replace(/<think>[\\s\\S]*?<\\/think>/g, "").trim();
+        reply = reply.replace(/<think>[\s\S]*?<\/think>/g, "").trim();
 
         if (reply) {
           console.log(`[WA] Sending AI reply to ${senderJid}: ${reply.slice(0, 60)}...`);
